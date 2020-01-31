@@ -54,7 +54,7 @@ stages:
               BRANCH_NAME: $(Build.SourceBranchName)
 
           - bash: |
-              cd "$HOME"/\${MANIFEST_REPO##*/}
+              cd "$HOME"/${MANIFEST_REPO##*/}
               commitId=$(Build.SourceVersion)
               commitId=$(echo "${commitId:0:7}")
               latest_commit=$(git rev-parse --short HEAD)
