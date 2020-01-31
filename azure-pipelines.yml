@@ -64,5 +64,5 @@ stages:
               . ./build.sh --source-only
               get_spk_version
               download_spk
-              ./spk/spk deployment create -n $(ACCOUNT_NAME) -k $(ACCOUNT_KEY) -t $(TABLE_NAME) -p $(PARTITION_KEY) --p3 $(Build.BuildId) --hld-commit-id $commitId --manifest-commit-id $latest_commit
+              ./spk/spk deployment create -n $(ACCOUNT_NAME) -k $(ACCOUNT_KEY) -t $(TABLE_NAME) -p azure-voting --p3 $(Build.BuildId) --hld-commit-id $commitId --manifest-commit-id $latest_commit
             displayName: Update manifest pipeline details in Spektate db
