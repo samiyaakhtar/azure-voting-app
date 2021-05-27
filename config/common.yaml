@@ -3,4 +3,4 @@ subcomponents:
     config:
       azureVoteFront:
         deployment:
-          imageTag: "35371"
+          imageTag: "35405"
